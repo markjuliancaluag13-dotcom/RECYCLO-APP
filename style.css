@@ -1,0 +1,69 @@
+body {
+ font-family: Arial, sans-serif;
+ background: #e6f7ee;
+ padding: 20px;
+ color: #333;
+}
+
+h1 {
+ text-align: center;
+}
+
+.section {
+ margin-top: 30px;
+ padding: 15px;
+ background: #fff;
+border-radius: 8px;
+ box-shadow: 0 0 5px #ccc;
+}
+
+input {
+ padding: 8px;
+ margin: 5px 0;
+width: 200px;
+}
+
+button {
+ padding: 8px 16px;
+margin: 5px 0;
+ background: #27ae60;
+ border: none;
+ color: white;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+button:hover {
+ background: #1e8449;
+}
+
+ul {
+ list-style: none;
+ padding-left: 0;
+}
+
+ul li {
+ background: #d4efdf;
+ margin: 5px 0;
+ padding: 8px;
+ border-radius: 4px;
+}
+
+/* --- GET STARTED SCREEN --- */
+.start-screen {
+ text-align: center;
+margin-top: 100px;
+ background: #ffffff;
+ padding: 40px;
+ border-radius: 12px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.2);
+ max-width: 500px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.start-screen button {
+ font-size: 18px;
+padding: 10px 25px;
+border-radius: 8px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recyclo – Gamified Recycling Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- GET STARTED PAGE -->
+  <div id="start-page" class="start-screen">
+    <h1>♻️ Welcome to Recyclo!</h1>
+    <p>Turn recycling into a fun game — earn eco-points and climb the leaderboard!</p>
+    <button onclick="startApp()">Get started</button>
+  </div>
+
+  <!-- MAIN APP -->
+  <div id="main-app" style="display: none;">
+    <h1>♻️ Recyclo</h1>
+    <p>Scan barcodes, earn eco-points!</p>
+
+    <div class="section">
+      <h2>Parental Control</h2>
+      <label>Enter your age:</label>
+      <input type="number" id="age" placeholder="Age" />
+      <button onclick="checkAge()">Check Age</button>
+      <p id="age-msg"></p>
+    </div>
+
+    <div class="section">
+      <h2>Barcode Scanner</h2>
+      <label>Enter Barcode:</label>
+      <input type="text" id="barcode" placeholder="Enter 13-digit barcode" maxlength="13">
+      <button onclick="scanBarcode()">Scan Barcode</button>
+      <p id="scan-result"></p>
+    </div>
+
+    <div class="section">
+      <h2>Eco-Points</h2>
+      <p id="points">Points: 0</p>
+      <p id="badge">Badge: None</p>
+    </div>
+
+    <div class="section">
+      <h2>Leaderboard</h2>
+      <button onclick="showLeaderboard()">Show Leaderboard</button>
+      <ul id="leaderboard-list"></ul>
+    </div>
+
+    <div class="section">
+      <h2>Recycling Tips</h2>
+      <button onclick="showTip()">Show Tip</button>
+      <p id="tip"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+  <script>
+    // Get Started Screen
+    function startApp() {
+      document.getElementById("start-page").style.display = "none";
+      document.getElementById("main-app").style.display = "block";
+    }
+  </script>
+</body>
+</html>
